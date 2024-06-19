@@ -149,13 +149,36 @@ ul {
   margin-left: 15px;
 }
 
-.flexbene{
+.flexbene {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.map{
+.map {
   width: 60vw;
   height: 30vh;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.text_form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 10px;
+}
+.dform {
+  display: flex;
+  justify-content: center;
+}
+.dterm{
+  display: flex;
+}
+.raffle_term{
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
 }

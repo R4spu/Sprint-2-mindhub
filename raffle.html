@@ -38,15 +38,100 @@
         raffle to win an easel
       </h2>
       <div>
-        <p>Our location is located at:</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11117.09952404867!2d-118.40593105216418!3d34.06609282546659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bbfb87aec65f%3A0x2770785430458c7a!2sUrth%20Caffe%20Beverly%20Hills!5e0!3m2!1ses!2sco!4v1718808319773!5m2!1ses!2sco"
-          class="map"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div>
+          <p>Our location is located at:</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11117.09952404867!2d-118.40593105216418!3d34.06609282546659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bbfb87aec65f%3A0x2770785430458c7a!2sUrth%20Caffe%20Beverly%20Hills!5e0!3m2!1ses!2sco!4v1718808319773!5m2!1ses!2sco"
+            class="map"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="dform">
+          <form action="./show_data.html" method="get" class="form">
+            <div class="text_form">
+              <p>First Name</p>
+              <label for="firstname">
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Your firstname"
+                  required
+                />
+              </label>
+            </div>
+            <div class="text_form">
+              <p>Last Name</p>
+              <label for="lastname">
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Your Lastname"
+                  required
+                />
+              </label>
+            </div>
+            <div class="text_form">
+              <p>Choose Meet or Zoom</p>
+              <label for="select">
+                <select name="select" id="select">
+                  <option value="Meet">Meet</option>
+                  <option value="Zoom">Zoom</option>
+                </select>
+              </label>
+            </div>
+            <div class="text_form">
+              <p>Choose Date</p>
+              <label for="date">
+                <input type="date" name="date" id="date" />
+              </label>
+            </div>
+            <div class="text_form">
+              <p>Payment Options</p>
+              <label for="radio">
+                <input type="radio" name="radio" id="radio" />
+                Cash
+              </label>
+              <label for="radio">
+                <input type="radio" name="radio" id="radio" />
+                Credit Card
+              </label>
+              <label for="radio">
+                <input type="radio" name="radio" id="radio" />
+                Debit Card
+              </label>
+            </div>
+            <div class="text_form">
+              <p>Message(Optional)</p>
+              <label for="textarea">
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  rows="10"
+                  cols="30"
+                ></textarea>
+              </label>
+            </div>
+            <div class="raffle_term">
+              <div>
+                <label for="checkbox">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                    required
+                  />
+                  I accept terms and conditions
+                </label>
+              </div>
+              <div><button>Send</button></div>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
     <footer>

@@ -5,7 +5,7 @@
 }
 header {
   min-height: 10vh;
-  min-width: 100%;
+  min-width: 100vw;
 }
 main {
   min-height: 85vh;
@@ -14,7 +14,7 @@ main {
 }
 footer {
   min-height: 5vh;
-  min-width: 100%;
+  min-width: 100vw;
 }
 body {
   min-height: 100vh;
@@ -33,6 +33,11 @@ nav {
   flex-direction: column;
   height: 100%;
   gap: 5px;
+}
+.ilogo{
+  width: 75px;
+  position: relative;
+  right: 10px;
 }
 a {
   text-align: center;
@@ -156,7 +161,7 @@ ul {
   align-items: center;
   gap: 20px;
 }
-.mbene{
+.mbene {
   margin-left: 18px;
 }
 .map {
@@ -178,11 +183,111 @@ ul {
   display: flex;
   justify-content: center;
 }
-.dterm{
+.dterm {
   display: flex;
 }
-.raffle_term{
+.raffle_term {
   display: flex;
   justify-content: space-around;
   gap: 5px;
+}
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    max-width: 100vw;
+  }
+  .nav_column {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    height: 100%;
+    width: 60vw;
+  }
+  .home {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ibanner {
+    width: 80%;
+    height: 40vh;
+    border-radius: 10%;
+    border: 4px solid white;
+    box-shadow: 0 0 2px;
+    object-fit: cover;
+  }
+  .aflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  a {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 10px;
+  }
+
+  .redcream {
+    width: 30%;
+    display: flex;
+    position: relative;
+    left: 5px;
+  }
+
+  .strawberry {
+    width: 30%;
+    display: flex;
+    position: relative;
+    right: 25px;
+  }
+  body {
+    min-height: 100vh;
+    background-color: pink;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  .cflex {
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flexbene {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .mbene {
+    margin-left: 0px;
+    position: relative;
+    left: 35px;
+  }
+  .ibene{
+    position: relative;
+    left: 11px;
+  }
+  .raffle_flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .map {
+    width: 25vw;
+    height: 25vh;
+  }
 }

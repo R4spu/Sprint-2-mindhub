@@ -92,6 +92,7 @@ main {
   border-radius: 10%;
   border: 4px solid white;
   box-shadow: 0 0 2px;
+  object-fit: cover;
 }
 .aflex {
   display: flex;
@@ -154,6 +155,9 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+.mbene{
+  margin-left: 18px;
 }
 .map {
   width: 60vw;
